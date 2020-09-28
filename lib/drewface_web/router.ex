@@ -18,6 +18,7 @@ defmodule DrewfaceWeb.Router do
     pipe_through :browser
 
     live "/", PageLive, :index
+    live "/hello", HelloLive, :index
 
     live "/users", UserLive.Index, :index
     live "/users/new", UserLive.Index, :new

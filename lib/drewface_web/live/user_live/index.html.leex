@@ -3,7 +3,7 @@
 <%= if @live_action in [:new, :edit] do %>
   <%= live_modal @socket, DrewfaceWeb.UserLive.FormComponent,
     id: @user.id || :new,
-    title: @page_title,
+    title: "User Form",
     action: @live_action,
     user: @user,
     return_to: Routes.user_index_path(@socket, :index) %>
